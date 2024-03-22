@@ -11,7 +11,9 @@
             box-sizing: border-box;
             font-family: 'Roboto', sans-serif;
         }
-        
+        a{
+            text-decoration: none;
+        }
         body {
             background-color: white;
         }
@@ -26,7 +28,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 0;
+            padding: 20px 50px;
+            background-color: #F5F5F5;
+            border-radius: 10px;
         }
         
         nav ul {
@@ -142,17 +146,17 @@
         }
         
         .card {
-            background-color: white;
-            padding: 20px;
-            width: calc(33.33% - 20px);
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
-            text-decoration: none;
-            color: #333;
+  background-color: #fff; /* Lighter background for a cleaner look */
+  padding: 25px; /* Slightly increased padding for better breathing room */
+  width: calc(33.33% - 24px); /* Adjusted width to account for increased padding */
+  margin-bottom: 30px; /* Increased spacing for a more modern feel */
+  border-radius: 8px; /* Softer rounded corners */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle box-shadow for depth */
+  transition: transform 0.2s ease-in-out; /* Smoother transition on hover */
+  text-decoration: none;
+  color: #333;
         }
-        
+
         .card:hover {
             transform: scale(1.1);
         }
@@ -202,12 +206,20 @@
             border-radius: 50%;
             margin-left: 0.625rem;
         }
-        .h3-card{
-            color: red;
+        .h3-card {
+  color: #3d84b3;  /* Soft blue tone */
+  font-family: inherit;  /* Use browser's default font stack */
+  font-size: 1.5rem;  /* Slightly larger font size */
+  font-weight: normal;  /* Regular weight for a softer look */
+  text-transform: none;  /* Remove uppercase for natural text flow */
+  letter-spacing: 0.5px;  /* Subtle letter spacing for readability */
+  text-shadow: 1px 1px 1px rgba(200, 200, 200, 0.2);  /* Light grey shadow for depth */
+}
 
-        }
-        /* Media Queries */
-        
+       .info{
+          
+       }
+       
         @media (max-width: 768px) {
             .container {
                 padding: 10px;
@@ -265,6 +277,9 @@
             <a href="#"><img class="user-icon" src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png" alt="User Icon" class="user-icon"></a>
               
         </header>
+        <div class="advertisement">
+            <img src="https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg" alt="Advertisement Image">
+        </div>
         <div class="content">
             <a class="card" href="#">
                 <h3 class="h3-card"> Umbanda</h3>
@@ -281,9 +296,10 @@
                 <p> Umbanda é uma religião de grande importância para a cultura, a religiosidade e a vida social do Brasil. Sua relevância se manifesta na preservação da cultura afro-brasileira, na promoção da liberdade religiosa, no cuidado espiritual, na caridade, na promoção da paz e no fortalecimento da comunidade. A Umbanda é uma expressão viva da cultura popular brasileira e um patrimônio cultural que deve ser preservado e valorizado.</p>
             </a>
         </div>
-        <div class="advertisement">
-            <img src="https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg" alt="Advertisement Image">
-        </div>
+       <div class="info">
+        <h1>Quer saber mais sobre a Umbanda?</h1>
+        <a href=""><h3 class="h3-card">Clique aqui</h3></a>
+       </div>
         <footer>
             <div class="footer-section">
                 <h2>Contacts</h2>
